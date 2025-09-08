@@ -9,6 +9,6 @@ function calculateHypotenuse() {
     // Note: Use Math.sqrt() for square root
      let sideA = parseFloat(document.getElementById('sideA').value);
      let sideB = parseFloat(document.getElementById('sideB').value);
-     const hypotenuse = Math.sqrt(sideA * sideA + sideB * sideB)
-      document.getElementById('hypote').textContent = `The area is: ${area}`;
+     const hypotenuse = Math.sqrt((sideA * sideA) + (sideB * sideB))
+      document.getElementById('hypotenuse').textContent = `The area is: ${hypotenuse}`;
 }
