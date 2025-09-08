@@ -2,11 +2,13 @@
 document.getElementById('calculateBtn').addEventListener('click', calculateCircle);
 
 function calculateCircle() {
-    // TODO:
-    // 1. Get the radius value from the input field
-    // 2. Calculate:
-    //    - Circumference using the formula: 2 * π * radius
-    //    - Area using the formula: π * radius^2
-    // 3. Display both results in their respective span elements
-    // Note: Use Math.PI for the value of π
-}
+    
+    let radius = parseFloat(document.getElementById('radius').value);
+    
+   
+        const circumference = (2 * Math.PI * radius);
+        const area = (Math.PI * radius * radius);
+        document.getElementById('area').textContent = `The area is: ${area}`;
+        document.getElementById('circumference').textContent = `The circumference is: ${circumference}`;
+    }
+
