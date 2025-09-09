@@ -14,6 +14,13 @@ h1 {
     margin-bottom: 30px;
 }
 
+h2 {
+    color: #444;
+    font-size: 1.2em;
+    margin: 20px 0 15px;
+    text-align: left;
+}
+
 .input-section {
     margin: 20px 0;
     padding: 20px;
@@ -30,7 +37,7 @@ label {
     text-align: left;
 }
 
-input {
+input, select {
     width: 100%;
     padding: 8px;
     margin: 5px 0;
@@ -40,7 +47,7 @@ input {
     font-size: 16px;
 }
 
-input:focus {
+input:focus, select:focus {
     outline: none;
     border-color: #4CAF50;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
@@ -56,6 +63,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 button:hover {
@@ -68,13 +76,26 @@ button:hover {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-#result, #percentage, #average {
+#priceBreakdown {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#subtotal, #discount, #finalTotal {
     margin: 10px 0;
-    padding: 10px;
-    font-size: 18px;
-    color: #333;
+    padding: 5px 0;
+}
+
+#finalTotal {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 1.2em;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
 }
 
 /* Add some responsive design */
@@ -84,11 +105,7 @@ button:hover {
         padding: 15px;
     }
     
-    input {
+    input, select {
         font-size: 14px;
-    }
-    
-    button {
-        width: 100%;
     }
 }
