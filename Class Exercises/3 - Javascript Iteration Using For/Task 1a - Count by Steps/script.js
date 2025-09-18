@@ -9,12 +9,18 @@ function generateSequence() {
     const output = document.getElementById('sequenceOutput');
     
     // TODO: Validate inputs
+    
     // Check if values are valid numbers
-    // Check if step is positive
+if (isNaN(start)) || (isNaN(end)) || (isNaN(step)); { document.getElementById('sequenceOutput').textContent = "Please enter valid numbers!";
+}// Check if step is positive
+    if (step <= 0) {document.getElementById('sequenceOutput').textContent = "Please enter valid numbers!";}
     // Check if end is greater than start
+    if (end <= start) {document.getElementById('sequenceOutput').textContent = "Please enter valid numbers!";}
     
     // TODO: Create array to store sequence
     let sequence = [];
+    for (let i = )
+
     
     // TODO: Use for loop with step to generate sequence
     // Remember to use the step in the for loop increment
