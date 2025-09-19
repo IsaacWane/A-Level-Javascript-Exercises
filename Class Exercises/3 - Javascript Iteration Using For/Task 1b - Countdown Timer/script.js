@@ -3,28 +3,35 @@ function startCountdown() {
     // Get input values
     const startNum = parseInt(document.getElementById('startNum').value);
     const delay = parseInt(document.getElementById('delay').value);
-    
+
     // Get display element and button
     const display = document.getElementById('countdownDisplay');
     const button = document.getElementById('startButton');
-    
+
     // TODO: Validate inputs
     // Check if values are valid numbers
     // Check if start number is positive
     // Check if delay is at least 100ms
-    
+    if (isNaN(startNum) || isNaN(delay)) {
+        display.textContent = `please enter a valid nubet`
+    }
+    if (start <= 0) { display.textContent = `please enter a valid number` }
+if (delay <= 100) {display.textContent = `please enter a valid number`}
+
+
     // TODO: Disable button during countdown
-    
-    // TODO: Create the countdown loop
+    document.getElementById('startButton').disabled = true;
+    // TODO: Create the countdown loop  
     // Use a for loop counting backwards
+    for (let i = startNum
     // Use setTimeout to create the delay between numbers
-    
+
     // TODO: Show "Blast off!" at the end
-    
+
     // TODO: Re-enable button after countdown finishes
 }
 
 // Initialize the page
-window.onload = function() {
+window.onload = function () {
     document.getElementById('countdownDisplay').textContent = 'Ready to start!';
 };

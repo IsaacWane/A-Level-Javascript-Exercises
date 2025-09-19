@@ -13,17 +13,17 @@ function generateSequence() {
     // Check if values are valid numbers
     if (isNaN(start) || isNaN(end) || isNaN(step)) {
         output.textContent = "Please enter valid numbers";
-        return;
+        
     }
     // Check if step is positive
     if (step <= 0) {
         output.textContent = "Step must be a positive number";
-        return;
+       
     }
     // Check if end is greater than start
     if (end <= start) {
         output.textContent = "End must be greater than start";
-        return;
+        
     }
 
     // Create array to store sequence
