@@ -11,22 +11,29 @@ function generateSequence() {
     // TODO: Validate inputs
     
     // Check if values are valid numbers
-if (isNaN(start)) || (isNaN(end)) || (isNaN(step)); { document.getElementById('sequenceOutput').textContent = "Please enter valid numbers!";
-}// Check if step is positive
-    if (step <= 0) {document.getElementById('sequenceOutput').textContent = "Please enter valid numbers!";}
+    if (isNaN(start) || isNaN(end) || isNaN(step)) {
+        output.textContent = "Please enter valid numbers";
+        return;
+    }
+    // Check if step is positive
+    if (step <= 0) {
+        output.textContent = "Step must be a positive number";
+        return;
+    }
     // Check if end is greater than start
-    if (end <= start) {document.getElementById('sequenceOutput').textContent = "Please enter valid numbers!";}
-    
-    // TODO: Create array to store sequence
-    let sequence = [];
-    for (let i = )
+    if (end <= start) {
+        output.textContent = "End must be greater than start";
+        return;
+    }
 
-    
-    // TODO: Use for loop with step to generate sequence
-    // Remember to use the step in the for loop increment
-    
-    // TODO: Display the sequence
-    // Join the numbers with arrows between them
+    // Create array to store sequence
+    let sequence = [];
+    // Use for loop with step to generate sequence
+    for (let i = start; i <= end; i += step) {
+        sequence.push(i);
+    }
+    // Display the sequence
+    output.textContent = sequence.join(' → ');
 }
 
 // Initialize the page
