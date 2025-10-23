@@ -158,6 +158,13 @@ const projects = [
   { name: "Task 3 Example - Collision Handling", folder: "11 - Hashing", path: "Class Exercises/11 - Hashing/Task 3 Example - Collision Handling/index.html", instructions: "Class Exercises/11 - Hashing/Task 3 Example - Collision Handling/instructions.md" },
   { name: "Task 3a - Collision Handling", folder: "11 - Hashing", path: "Class Exercises/11 - Hashing/Task 3a - Collision Handling/index.html", instructions: "Class Exercises/11 - Hashing/Task 3a - Collision Handling/instructions.md" },
 
+    // 13 - Dijkstra
+    { name: "Exercise 1 Example - Dijkstra", folder: "13 - Dijkstra", path: "Class Exercises/13 - Dijkstra/Exercise 1 Example - Dijkstra/index.html", instructions: "Class Exercises/13 - Dijkstra/Exercise 1 Example - Dijkstra/instructions.md" },
+    { name: "Exercise 2 - Dijkstra Easy", folder: "13 - Dijkstra", path: "Class Exercises/13 - Dijkstra/Exercise 2 - Dijkstra Easy/index.html", instructions: "Class Exercises/13 - Dijkstra/Exercise 2 - Dijkstra Easy/instructions.md" },
+    { name: "Exercise 3 - Dijkstra Medium", folder: "13 - Dijkstra", path: "Class Exercises/13 - Dijkstra/Exercise 3 - Dijkstra Medium/index.html", instructions: "Class Exercises/13 - Dijkstra/Exercise 3 - Dijkstra Medium/instructions.md" },
+    { name: "Exercise 4 - Dijkstra Hard", folder: "13 - Dijkstra", path: "Class Exercises/13 - Dijkstra/Exercise 4 - Dijkstra Hard/index.html", instructions: "Class Exercises/13 - Dijkstra/Exercise 4 - Dijkstra Hard/instructions.md" },
+    { name: "Exercise 5 - Dijkstra Assess", folder: "13 - Dijkstra", path: "Class Exercises/13 - Dijkstra/Exercise 5 - Dijkstra Assess/index.html", instructions: "Class Exercises/13 - Dijkstra/Exercise 5 - Dijkstra Assess/instructions.md" },
+
   // 12 - Stacks
   { name: "Exercise 1 Example - Stack with Array", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 1 Example - Stack with Array/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 1 Example - Stack with Array/instructions.md" },
   { name: "Exercise 1a - Stack Array Easy", folder: "12 - Stacks", path: "Class Exercises/12 - Stacks/Exercise 1a - Stack Array Easy/index.html", instructions: "Class Exercises/12 - Stacks/Exercise 1a - Stack Array Easy/instructions.md" },
